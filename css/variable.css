@@ -1,0 +1,19 @@
+/* ========== VARIABLES GLOBALES ========== */
+:root {
+    --primary-color: #e60023;
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --gray-light: #efefef;
+    --gray-medium: #767676;
+    --border-radius: 16px;
+    --transition: all 0.3s ease;
+    --shadow-hover: 0 8px 16px rgba(0,0,0,0.1);
+    --sidebar-width: 80px;
+}
+
+/* Version mobile - sidebar plus petite */
+@media (max-width: 768px) {
+    :root {
+        --sidebar-width: 60px;
+    }
+}

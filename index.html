@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinPro - Inspiration Visuelle</title>
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main id="app-container" class="layout-wrapper">
+        
+        <!-- Barre latérale verticale (Sidebar) -->
+        <aside class="sidebar">
+            <!-- Logo -->
+            <figure class="logo-container" role="button" tabindex="0">
+                <img src="./css/assets/icones/pinterest.png" alt="Pinterest Logo">
+                <figcaption class="visually-hidden">Pinterest</figcaption>
+            </figure>
+
+            <!-- Navigation verticale -->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <button class="nav-btn" data-view="home">
+                            <img src="./css/assets/icones/accueil.png" alt="">
+                            <span>Accueil</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-btn" data-view="explore">
+                            <img src="./css/assets/icones/explorer.png" alt="">
+                            <span>Explorer</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-btn" data-view="saved">
+                            <img src="./css/assets/icones/vos_tableaux.png" alt="">
+                            <span>Enregistré</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-btn" data-view="create">
+                            <img src="./css/assets/icones/creer.png" alt="">
+                            <span>Créer</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-btn" data-view="messages">
+                            <img src="./css/assets/icones/messages.png" alt="">
+                            <span>Messages</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-btn" data-view="updates">
+                            <img src="./css/assets/icones/mise_a_jour.png" alt="">
+                            <span>Mise à jour</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-btn" data-view="settings">
+                            <img src="./css/assets/icones/paramètres.png" alt="">
+                            <span>Paramètres</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenu principal (Header + Grille) -->
+        <section class="main-content-area">
+            
+            <!-- Barre de recherche supérieure -->
+            <header class="search-header">
+                <section class="search-container">
+                    <label for="searchInput" class="visually-hidden">Rechercher</label>
+                    <span class="search-icon">🔍︎</span>
+                    <input type="text" id="searchInput" class="search-bar" placeholder="Rechercher des idées...">
+                </section>
+
+                <nav class="header-icons">
+                    <ul>
+                        <li>
+                            <button class="icon-btn" aria-label="Profil">
+                                <img src="./css/assets/icones/logo.png" alt="" class="btn-icon-img">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Zone de grille d'images -->
+            <section class="masonry-grid" id="pinGrid">
+                <article class="empty-state">
+                    <p>Chargement... </p>
+                </article>
+            </section>
+
+            <!-- Pied de page -->
+            <footer class="main-footer">
+                <small>&copy; 2026 PinPro - Inspiration Visuelle</small>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+
+        <!-- Modale (Popup) -->
+        <aside id="pinModal" class="modal" aria-hidden="true" role="dialog">
+            <div class="modal-content">
+                <button class="modal-close-btn" aria-label="Fermer">&times;</button>
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info-container">
+                    <h2 id="modalTitle"></h2>
+                    <div class="modal-author">
+                        <span class="author-avatar" id="modalAuthorAvatar"></span>
+                        <span id="modalAuthorName"></span>
+                    </div>
+                    <p id="modalDescription"></p>
+                    <button class="save-btn" id="modalSaveBtn">Enregistrer</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Toast Notification -->
+        <aside id="toast" class="toast" role="status" aria-live="polite" aria-hidden="true">
+            <p class="toast-message"></p>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.pinApp && typeof window.pinApp.init === 'function') {
+                window.pinApp.init();
+            }
+        });
+    </script>
+</body>
+</html>
