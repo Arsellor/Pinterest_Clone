@@ -1,5 +1,5 @@
 /**
- * PinPro - Application d'inspiration visuelle
+ * Pinterest_Clone - Application d'inspiration visuelle
  * @version 3.0.0
  */
 
@@ -9,63 +9,63 @@ const APP_STORAGE_KEY = 'PINPRO_APP_DATA_V3';
 // VOS IMAGES AVEC DESCRIPTIONS UNIQUES - CHEMINS CORRIGÉS
 const REAL_IMAGES = [
     {
-        src: './css/assets/photos/apres_1.png', // Correct (minuscule)
+        src: './css/assets/photos/apres_1.webp', 
         title: 'Dypsis lutescens (Palmier Areca)',
         category: 'Plantes Tropicales',
         description: "Offert à Arsellia.T, c'est à dire moi pour symboliser ma croissance, ce Palmier Areca, emblème de Victoire et de triomphe, partage notre quotidien depuis 18 ans et s'épanouit au rythme de ma protection.",
         author: 'Arsellia T.'
     },
     {
-        src: './css/assets/photos/apres_2.png', // Correct (minuscule)
+        src: './css/assets/photos/apres_2.webp', 
         title: 'Dracaena fragrans (Dragonnier d\'Afrique)',
         category: 'Plantes Tropicales',
         description: "Symbole de résilience adaptative et d\'équilibre entre ombre et lumière",
         author: 'Arsellia T.'
     },
     {
-        src: './css/assets/photos/apres_3.png', // Correct (minuscule)
+        src: './css/assets/photos/apres_3.webp', 
         title: 'Ficus benjamina \'Variegata\'',
         category: 'Plantes Tropicales',
         description: "Offert à Edene.T pour symboliser sa croissance, ce Variegata, emblème de Le Luxe et le Raffinement, partage notre quotidien depuis 8 ans et s'épanouit au rythme de ma protection.",
         author: 'Arsellia T.'
     },
     {
-        src: './css/assets/photos/Apres_4.png', // Correct (Majuscule)
+        src: './css/assets/photos/Apres_4.webp', 
         title: 'Pachira aquatica (Châtaignier de la Guyane)',
         category: 'Plantes Tropicales',
         description: "Offert à Zou pour symboliser sa croissance, ce Pachira, emblème de chance et de richesse, partage notre quotidien depuis 3 ans et s'épanouit au rythme de sa protection.",
         author: 'Arsellia T.'
     },      
     {
-        src: './css/assets/photos/Après_5.png', // Correct (Accent + Majuscule)
+        src: './css/assets/photos/Après_5.webp', 
         title: 'Yucca elephantipes (Yucca pied d\'éléphant)',
         category: 'Plantes Tropicales',
         description: 'Symbole de force tranquille et de protection, sa structure sculpturale incarne la ténacité et la résilience face aux épreuves.',
         author: 'Arsellia T.'
     },
     {
-        src: './css/assets/photos/Apres_6.png', // Correct (Majuscule)
+        src: './css/assets/photos/Apres_6.webp', 
         title: 'Euonymus fortunei \'Emerald \'n\' Gold\'',
         category: 'Plantes d\'Extérieur & Balcon',
         description: 'Symbole de rayonnement et de constance, son feuillage bicolore incarne la lumière persistante à travers les saisons.',
         author: 'Arsellia T.'
     },
     {
-        src: './css/assets/photos/Apres_7.png', // Correct (Majuscule)
+        src: './css/assets/photos/Apres_7.webp', 
         title: 'Nerium oleander (Laurier-rose)',
         category: 'Plantes d\'Extérieur & Balcon',
         description: 'Symbole de victoire et de beauté fatale, il incarne la persévérance et la force de caractère sous un soleil ardent.',
         author: 'Arsellia T.'
     },
     {
-        src: './css/assets/photos/Apres_8.png', // Correct (Majuscule)
+        src: './css/assets/photos/Apres_8.webp', 
         title: 'Bergenia cordifolia (Plante des savetiers)',
         category: 'Plantes d\'Extérieur & Balcon',
         description: 'Symbole de robustesse et d\'amitié inaltérable, elle incarne la fidélité capable de braver les hivers les plus rudes.',
         author: 'Arsellia T.'
     },
     {
-        src: './css/assets/photos/Apres_9.png', // Correct (Majuscule)
+        src: './css/assets/photos/Apres_9.webp', 
         title: 'Lonicera periclymenum (Chèvrefeuille)',
         category: 'Plantes d\'Extérieur & Balcon',
         description: 'Symbole de lient éternels et de dévouement, son parfum et ses lianes entrelacées incarnent l’attachement et la générosité du cœur.',
