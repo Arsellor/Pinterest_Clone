@@ -199,9 +199,9 @@ body {
 }
 
 .btn-icon-img {
-    width: 28px;
-    height: 28px;
-    border: 2px solid black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
 /* ========== GRILLE MASONRY TYPE PINTEREST ========== */
