@@ -173,10 +173,10 @@ const pinApp = (function() {
                      alt="${escapeHtml(pin.title)}" 
                      loading="lazy"
                      decoding="async"
-                     onerror="this.src='./css/assets/photos/fallback.png'">
+                     onerror="this.src='./css/assets/photos/fallback.webp'">
                 <div class="pin-overlay">
                     <button class="save-btn ${isSaved ? 'saved' : ''}" 
-                            data-pin-id="${pin.id}" 
+                            data-pin-id="${pin.id}"
                             data-action="save">
                         ${isSaved ? '✓ Enregistré' : 'Enregistrer'}
                     </button>
