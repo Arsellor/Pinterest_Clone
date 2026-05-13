@@ -37,9 +37,9 @@ Ce projet a été réalisé dans le but de progresser en :
 ## 📱 Réseaux & Vidéos
 
 🎥 YouTube Short :  
-[Voir la vidéo YouTube](https://youtube.com/shorts/9H8-hVAcfWQ?si=Oy5VXEHEhROevakR&utm_source=chatgpt.com)]
+[Voir la vidéo YouTube](https://youtube.com/shorts/9H8-hVAcfWQ?si=Oy5VXEHEhROevakR&utm_source=chatgpt.com).]
 
 🎵 TikTok :  
 [Voir la vidéo TikTok](https://www.tiktok.com/@tantchi/video/7639156916073073942?is_from_webapp=1&sender_device=pc&utm_source=chatgpt.com)
 ⭐ N’hésitez pas à laisser une étoile sur le projet si vous aimez le concept.
-```
+
